@@ -7,7 +7,7 @@ name: Build and deploy an app to AKS
 env:
     AZURE_CONTAINER_REGISTRY: demoacrtestoam
     CLUSTER_NAME: demo-aks
-    CONTAINER_NAME: 'simple-rest-api '
+    CONTAINER_NAME: simple-rest-api-app
     DEPLOYMENT_MANIFEST_PATH: ./manifests
     IMAGE_PULL_SECRET_NAME: demoacrtestoamsecret
     RESOURCE_GROUP: demo-app
