@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: simple-rest-api
+  name: simple-rest-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-rest-api
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: simple-rest-api
+    spec:
+      containers:
+      - image: 'demoacrtestoam.azurecr.io/simple-rest-api '
+        name: simple-rest-api
+        ports:
+        - containerPort: 8000
+        resources: {}
+status: {}
